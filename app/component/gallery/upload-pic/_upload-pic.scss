@@ -1,0 +1,56 @@
+@import "../../../scss/lib/theme/vars";
+
+.upload-pic {
+
+  h4 {
+    text-decoration: underline;
+    margin: 0 0 $space-sm 0;
+  }
+
+  .grab-img {
+    text-decoration: underline;
+    font-size: 2.4vw;
+    margin: 0 $space-sm 0 0;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .upload-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 $space-std*2 0;
+  }
+
+  .input-photo {
+    border: none;
+    background: $medgray;
+    border-radius: 3px;
+    width: 100%;
+    color: $white;
+    margin: 2.4% 0;
+    padding: 2% 4%;
+    font-size: 2.4vw;
+    box-sizing: border-box;
+    font-weight: 200;
+  }
+
+  ::-webkit-input-placeholder {
+    color: white;
+  }
+
+  :-moz-placeholder {
+    color: white;
+  }
+
+  ::-moz-placeholder {
+    color: white;
+  }
+
+  :-ms-input-placeholder {
+    color: white;
+  }
+
+}

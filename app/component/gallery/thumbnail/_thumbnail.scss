@@ -1,0 +1,15 @@
+@import "../../../scss/lib/theme/vars";
+
+.thumbnail {
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: $space-sm 0;
+  }
+
+  button {
+    float: right;
+    margin: 0 0 $space-std 0;
+  }
+}

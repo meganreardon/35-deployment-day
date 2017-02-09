@@ -1,0 +1,44 @@
+@import "../../../scss/lib/theme/vars";
+
+.gallery-item {
+  margin: 0 0 $space-std*2 0;
+}
+
+.current-item {
+  background: $medgray;
+  border-radius: 3px;
+  margin: 10px 0;
+  padding: 2%;
+  line-height: 5vw;
+}
+
+.gallery-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 8% 0;
+}
+
+.gallery-btn-dark {
+  color: $white;
+  background-color: $dkgray;
+  border: none;
+  font-weight: 200;
+  padding: 1% 8%;
+  font-size: 2.2vw;
+}
+
+.gallery-btn-light {
+  color: $dkgray;
+  background-color: $medgray;
+  border: none;
+  font-weight: 200;
+  padding: 1% 8%;
+  font-size: 2.2vw;
+  margin: 0 0 0 $space-sm;
+}
+
+.hover-state {
+  &:hover {
+    color: $orange;
+  }
+}

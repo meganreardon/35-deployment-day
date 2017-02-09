@@ -1,0 +1,32 @@
+@import "../../scss/lib/theme/vars";
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.social-icon-list {
+
+  li {
+    margin-right: 1vw;
+    width: 34px;
+    height: 34px;
+    border-radius: 3px;
+    background-image: url('../../assets/img/sprites.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &:first-child {
+      background-position: -226px -54px;
+    }
+
+    &:nth-child(2) {
+      background-position: -340px -54px;
+    }
+
+    &:last-child {
+      background-position: -397px -54px;
+    }
+  }
+
+}

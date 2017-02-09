@@ -1,0 +1,29 @@
+<section class="filter-demo-section">
+  <h2>Filter by</h2>
+  <ul>
+
+    <h3>uppercase:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToFilter">{{ thing | uppercase }}</li>
+    <h3>lowercase:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToFilter">{{ thing | lowercase }}</li>
+    <h3>number:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToFilter">{{ thing | number }}</li>
+    <h3>limitTo 4:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToFilter | limitTo:4">{{ thing}}</li>
+
+    <h3>date medium:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.dateToMakeDate">{{ thing | date:'medium' }}</li>
+    <h3>date year/month/day @ hour:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.dateToMakeDate">{{ thing | date:'yyyy-MM-dd @ h:mma' }}</li>
+    <h3>date month/day/year:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.dateToMakeDate">{{ thing | date:'MM/dd/yyyy' }}</li>
+
+    <h3>orderBy name:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToReverse | orderBy:'name'">{{ thing.name }} - {{ thing.age }}</li>
+    <h3>orderBy age:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToReverse | orderBy:'age'">{{ thing.name }} - {{ thing.age }}</li>
+    <h3>orderBy reverse age:</h3>
+    <li class="filter-demo" ng-repeat="thing in filtersDemoCtrl.stuffToReverse | orderBy:'-age'">{{ thing.name }} - {{ thing.age }}</li>
+
+  </ul>
+</section>
