@@ -1,0 +1,30 @@
+<section class="edit">
+
+  <form
+    name="editGallery"
+    ng-submit="editGalleryCtrl.updateGallery()"
+    no-validate>
+
+  <div class="current-item">
+    <fieldset>
+      <div class="gallery-form-grow">
+        <span class="item-label">name:</span>
+        <input name="name" class="input-gallery" ng-model="editGalleryCtrl.gallery.name">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="gallery-form-grow">
+        <span class="item-label">description:</span>
+        <input name="desc" class="input-gallery" ng-model="editGalleryCtrl.gallery.desc">
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="gallery-button-container">
+    <button class="gallery-btn-dark">update</button>
+  </div>
+
+  </form>
+
+</section>

@@ -1,0 +1,36 @@
+<section class="home">
+
+  <!-- <section class="accordion">
+    <div class="accordion-test">
+      <uib-accordion>
+        <p uib-accordion-group class="panel-default" heading="About CFGram">Lorem ipsum dolor sit amet. Nulla et euismod dolor, a rhoncus nunc.</p>
+        <p uib-accordion-group class="panel-default" heading="About Our Team">Consectetur adipiscing elit. Nullam non massa et elit mattis. Nam vulputate sagittis massa, sit amet rhoncus mi sollicitudin eget. Integer vehicula neque tempor, iaculis lacus at, tempus ligula. Nam interdum turpis ac facilisis sollicitudin.</p>
+        <p uib-accordion-group class="panel-default" heading="Help">Imperdiet eu in urna. Ut vulputate feugiat velit. Etiam in luctus ipsum, in consectetur nibh.</p>
+      </uib-accordion>
+    </div>
+  </section> -->
+
+  <!-- <a-modal></a-modal> -->
+
+  <create-gallery></create-gallery>
+
+  <div class="search-galleries">
+    <span>Search Galleries.</span>
+    <input class="input-std" ng-model="homeCtrl.gallerySearchTerm" type="text" placeholder="search">
+  </div>
+
+  <span>Galleries.</span>
+
+  <div class="gallery-item-container">
+    <ul>
+      <gallery-item
+        ng-repeat="item in homeCtrl.galleries | gallerySearch: homeCtrl.gallerySearchTerm" gallery="item"
+        delete-done="homeCtrl.galleryDeleteDone(galleryData)"
+        ng-click="homeCtrl.currentGallery = item">
+      </gallery-item>
+    </ul>
+  </div>
+
+  <thumbnail-container ng-if="homeCtrl.currentGallery" gallery="homeCtrl.currentGallery"></thumbnail-container>
+
+</section>

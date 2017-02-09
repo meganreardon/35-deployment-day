@@ -1,0 +1,41 @@
+@import "../theme/vars";
+
+html {
+  background: $white;
+  font-family: $font-std;
+  font-weight: 200;
+  width: 100%;
+  height: 100%;
+  font-size: 2.7vw;
+  letter-spacing: .11vw;
+  color: $dkgray;
+}
+
+body {
+  background: $ltgray;
+  margin: 5% 10%;
+  border: 1px solid $medgray;
+  max-width: 960px;
+  font-weight: 200;
+}
+
+main {
+  padding: 8% 3%;
+  height: 80%;
+}
+
+a {
+  color: $dkgray;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+span {
+
+}
+
+.clearfix {
+  clear: both;
+}
