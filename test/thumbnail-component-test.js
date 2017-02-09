@@ -33,7 +33,7 @@ describe('Thumbnail Component', function() {
 
       let thumbnailCtrl = this.$componentController('thumbnail', null, mockBindings);
 
-      this.$httpBackend.expectDELETE('http://localhost:8000/api/gallery/testGalleryID/pic/testPicID', headers)
+      this.$httpBackend.expectDELETE(`${__API_URL__}/api/gallery/testGalleryID/pic/testPicID`, headers)
       .respond(204);
 
       thumbnailCtrl.deleteAPic();

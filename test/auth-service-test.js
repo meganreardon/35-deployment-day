@@ -43,13 +43,13 @@ describe('Auth Service', function() {
         Accept: 'application/json',
         Authorization: `Basic ${base64}`,
       };
-      
+
       this.authService.login(testUser)
       .then(token => {
         expect(token).toBe('test token');
       });
 
-      this.$httpBackend.expectGET('http://localhost:8000/api/login', headers)
+      this.$httpBackend.expectGET(`${__API_URL__}/api/login`, headers)
       .respond(200, 'test token');
 
       this.$httpBackend.flush();
