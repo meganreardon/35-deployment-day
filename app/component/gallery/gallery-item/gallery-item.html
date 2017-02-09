@@ -1,0 +1,24 @@
+<li class="gallery-item">
+
+  <div class="current-item" ng-if="!galleryItemCtrl.showEditGallery">
+
+    <div class="gallery-form-grow">
+      <span class="item-label">name:</span>
+      <span class="hover-state">{{ galleryItemCtrl.gallery.name }}</span>
+    </div>
+
+    <div class="gallery-form-grow">
+      <span class="item-label">description:</span>
+      <span>{{ galleryItemCtrl.gallery.desc }}</span>
+    </div>
+
+  </div>
+
+  <div class="gallery-button-container" ng-if="!galleryItemCtrl.showEditGallery">
+    <button class="gallery-btn-dark" ng-click="galleryItemCtrl.showEditGallery = !galleryItemCtrl.showEditGallery">edit</button>
+    <button class="gallery-btn-light" ng-click="galleryItemCtrl.deleteGallery()">delete</button>
+  </div>
+
+  <edit-gallery ng-if="galleryItemCtrl.showEditGallery" gallery="galleryItemCtrl.gallery"></edit-gallery>
+
+</li>

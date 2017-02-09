@@ -1,0 +1,43 @@
+@import "../theme/vars";
+
+* {
+  // outline: orange 1px solid;
+}
+
+ui-view {
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.input-std {
+  font-weight: 200;
+  border: solid 1px $medgray;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.7vw;
+  box-sizing: border-box;
+  margin: 2.4% 0;
+  padding: 3%;
+  font-size: 2.4vw;
+  color: $dkgray;
+}
+
+.btn-std {
+  font-weight: 200;
+  width: 40%;
+  background-color: $dkgray;
+  border-radius: 3px;
+  color: $white;
+  font-size: 2.7vw;
+  float: right;
+  box-sizing: border-box;
+  border: none;
+  margin: 2.4% 0;
+  padding: 3%;
+
+    &:hover {
+      background-color: $orange;
+    }
+}
